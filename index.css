@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: calibri;
+  padding: 10px;
+  background: #f1f1f1;
+}
+header {
+  display: flex;
+}
+
+#logo {
+  color: blue;
+}
+.topnavi {
+  color: teal; /* border-style: solid;*/
+  border-color: black;
+  display: flex;
+  flex-direction: row;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: block;
+}
+#divtest {
+  background-color: #eeeeee;
+  display: inline;
+  flex-direction: row;
+}
+
+/* mellerum li for at target list items specifikt */
+#ultest li {
+  display: inline;
+  float: left;
+}
+
+.footer {
+}
