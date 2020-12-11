@@ -1,0 +1,29 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 3px;
+  grid-template: 40px 40px auto 50px 40px / repeat(12, 1fr);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    ". m m m m m m m m m m ."
+    "k k k k k k k k k k k k"
+    "f f f f f f f f f f f f";
+}
+
+.header {
+  grid-area: h;
+}
+.nav {
+  grid-area: n;
+}
+.main {
+  grid-area: m;
+}
+
+.kontakt {
+  grid-area: k;
+}
+.footer {
+  grid-area: f;
+}

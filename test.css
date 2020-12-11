@@ -1,0 +1,29 @@
+.container {
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* du glemte at skrive repeat første gang, derefter skal den stå direkte op til parentes */
+  grid-template-rows: 40px auto 40px;
+  grid-gap: 3px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+/* grid-column: x / x er shorthand for grid-column-end og grid-column-end i den rækkefølge */
+
+.header {
+  grid-area: h;
+  /* du glemte at skrive -1 så den position var ikke rigtigt, den skulle bruge alt plads men den brugte istedet 3 columns */
+}
+.menu {
+  grid-area: m;
+}
+.content {
+  grid-area: c;
+}
+.footer {
+  grid-area: f;
+  /* grid-column: 1 / -1; sådan skrev jeg den anden måde, det er slettet på de andre classes */
+}
