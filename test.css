@@ -1,29 +1,69 @@
-.container {
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* du glemte at skrive repeat første gang, derefter skal den stå direkte op til parentes */
-  grid-template-rows: 40px auto 40px;
-  grid-gap: 3px;
-  grid-template-areas:
-    "h h h h h h h h h h h h"
-    "m c c c c c c c c c c c"
-    "f f f f f f f f f f f f";
+* {
+  box-sizing: border-box;
 }
 
-/* grid-column: x / x er shorthand for grid-column-end og grid-column-end i den rækkefølge */
+body {
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-family: calibri;
+}
+
+/* .nav {
+  overflow: hidden;
+  background-color: teal;
+  margin: 0;
+  box-shadow: 1px 1px grey;
+  padding: 20px 20px;
+  float: right;
+}
+.nav div {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  text-align: center;
+  display: grid;
+}
+.header li {
+  float: right;
+  list-style: none;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.header li:last-child {
+  float: left;
+}
+/*
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 3px;
+  grid-template: 40px 40px auto 50px 40px / repeat(12, 1fr);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "m m m m m m m m m m m m";
+}
 
 .header {
   grid-area: h;
-  /* du glemte at skrive -1 så den position var ikke rigtigt, den skulle bruge alt plads men den brugte istedet 3 columns */
 }
-.menu {
+.nav {
+  grid-area: n;
+}
+.contentcontainer {
   grid-area: m;
 }
-.content {
-  grid-area: c;
-}
-.footer {
-  grid-area: f;
-  /* grid-column: 1 / -1; sådan skrev jeg den anden måde, det er slettet på de andre classes */
-}
+*/
