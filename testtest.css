@@ -1,16 +1,14 @@
 .contentcontainer > div {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: space-between;
   align-items: center;
   font-size: 2em;
   color: black;
   grid-gap: 3px;
 }
-
 html,
 body {
   background-color: #white;
-  margin: 10px;
 }
 
 .contentcontainer > div:nth-child(1n) {

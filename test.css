@@ -1,13 +1,33 @@
 * {
   box-sizing: border-box;
+  margin: 0; /* margin 0; her forcer margin 0 på alting */
+  padding: 0;
 }
 
-body {
-  margin: 0;
-  max-width: 100%;
-}
+body,
 html {
-  font-family: calibri;
+  font-family: "calibri", sans-serif;
+  padding-top: 0;
+  width: 100%;
+   {
+    background-color: #white;
+  }
+
+  .contentcontainer > div:nth-child(1n) {
+    background-color: #96ceb4;
+  }
+
+  .contentcontainer > div:nth-child(3n) {
+    background-color: #88d8b0;
+  }
+
+  .contentcontainer > div:nth-child(2n) {
+    background-color: #ff6f69;
+  }
+
+  .contentcontainer > div:nth-child(4n) {
+    background-color: #ffcc5c;
+  }
 }
 
 /* .nav {
@@ -27,9 +47,11 @@ html {
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   text-align: center;
-  display: grid;
+  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 .header li {
   float: right;
@@ -38,12 +60,70 @@ html {
   color: black;
   text-align: center;
   padding: 12px;
-  text-decoration: none;
+  text-decoration: none; /* ingen style på links */
   border-radius: 4px;
 }
-
+.header li:hover {
+  background-color: black;
+  color: white;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  width: 80%;
+  max-width: 1080px;
+  align-content: center;
+  align-self: center;
+}
 .header li:last-child {
   float: left;
+}
+.contentcontainer {
+  display: grid;
+  justify-content: center;
+  grid-gap: 3px;
+}
+.contentcontainer > div {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+  grid-gap: 3px;
+}
+.contentcontainer > div:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.contentcontainer > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.contentcontainer > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.contentcontainer > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+.ommigcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1080px;
+  grid-template-rows: ;
+  align-content: center;
+  grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+}
+.ommigcontainer p {
+  font-size: 12px;
+}
+.ommigcontainer h2 {
+  font-size: 36px;
+  margin: 20px;
+  padding: 0;
 }
 /*
 .container {
