@@ -170,8 +170,6 @@ ul {
   margin: 0 auto;
 }
 
-img
-
 /*.ommigcontainer h3 {
   font-size: 26px;
   padding-left: 20;
@@ -188,13 +186,12 @@ img
 }
 
 .portioliocontainer {
-  grid-template-columns: 1fr 1fr;
   max-width: 1080px;
   padding: 20px;
   position: relative;
   overflow: hidden;
   align-content: center;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(2, 344px) / repeat(3, 1fr);
   grid-template-areas:
     "h h ."
     "c1 c2 c3"
@@ -222,8 +219,6 @@ img
 .showcase1 {
   height: auto;
   grid-area: c1;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .case1text {
@@ -236,12 +231,10 @@ img
 .case1text p {
   margin: 0;
 }
-/* Dette er mellemrum */
+
 .showcase2 {
   height: auto;
   grid-area: c2;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .case2text {
@@ -258,8 +251,6 @@ img
 .showcase3 {
   height: auto;
   grid-area: c3;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .case3text {
