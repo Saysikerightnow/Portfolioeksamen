@@ -66,7 +66,46 @@ ul {
   float: left;
   font-weight: bold;
 }
-
+.forsidecontainer {
+  max-width: 1080px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  align-content: center;
+  grid-template: repeat(1, 347px) / repeat(1, 1fr);
+  grid-template-areas:
+    "te  bi"
+    "te  bi";
+}
+.forsidecontainer > .toptext {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.forsidecontainer > div {
+  margin-left: 20px;
+}
+.forsidecontainer h1 {
+  align-items: center;
+  font-size: 48px;
+  padding-top: 0;
+  /*grid-area: te;*/
+}
+.forsidecontainer h2 {
+  /*grid-area: te;*/
+  font-size: 40px;
+}
+.forsidecontainer p {
+  /*grid-area: te;*/
+  font-size: 20px;
+}
+.forsidecontainer > div {
+  display: grid;
+  justify-content: space-between;
+  font-size: 2em;
+  color: black;
+  grid-gap: 3px;
+}
 .contentcontainer {
   display: grid;
   justify-content: center;
@@ -102,41 +141,18 @@ ul {
   background-color:  /*#b0c4de;*/ white;
 }
 
-.forsidecontainer {
-  display: grid;
-  background-color: teal;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1080px;
-  grid-template-rows: ;
-  padding: 20px;
-  align-content: center;
-  grid-template: repeat(3, 150px) / repeat(3, 1fr);
-}
-
-.forsidecontainer > div {
-  display: grid;
-  justify-content: space-between;
-  font-size: 2em;
-  color: black;
-  grid-gap: 3px;
-}
-
 .ommigcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   max-width: 1080px;
-  grid-template-rows: ;
   padding: 20px;
   align-content: center;
-  grid-template: repeat(3, 150px) / repeat(3, 1fr);
-  grid-template-areas:
-    "t . b "
-    "c c b"
-    ". . b";
+  align-items: center;
+  grid-template: repeat(1, 430px) / repeat(2, 1fr);
+  grid-template-areas: "t b";
 }
 .ommigcontainer p {
   font-size: 12px;
-  grid-area: c;
+  grid-area: t;
   margin: 20px;
 }
 .ommigcontainer h2 {
@@ -145,20 +161,23 @@ ul {
   padding-left: 20;
   grid-area: t;
 }
-
-.billede {
+.ommigcontainer > .billede {
   border-radius: 50%;
-  grid-area: b;
   width: 80%;
   height: auto;
   border: 1px solid black;
+  align-self: center;
+  margin: 0 auto;
 }
-.ommigcontainer h3 {
+
+img
+
+/*.ommigcontainer h3 {
   font-size: 26px;
   padding-left: 20;
   padding-top: 0;
   margin: 20px;
-}
+}*/
 .portioliocontainer > div {
   display: grid;
   justify-content: space-between;
@@ -171,7 +190,6 @@ ul {
 .portioliocontainer {
   grid-template-columns: 1fr 1fr;
   max-width: 1080px;
-  grid-template-rows: ;
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -185,6 +203,7 @@ ul {
 .portioliocontainer p {
   font-size: 12px;
   margin-left: 20px;
+  margin-top: 0;
 }
 .portioliocontainer h2 {
   font-size: 36px;
@@ -193,14 +212,14 @@ ul {
   grid-area: h;
 }
 .portioliocontainer img {
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s ease;
 }
 .portioliocontainer img:hover {
-  opacity: 0.3;
+  opacity: 1;
 }
 
-.baba {
+.showcase1 {
   height: auto;
   grid-area: c1;
   /* display: flex;
@@ -217,7 +236,42 @@ ul {
 .case1text p {
   margin: 0;
 }
+/* Dette er mellemrum */
+.showcase2 {
+  height: auto;
+  grid-area: c2;
+  /* display: flex;
+  flex-direction: column; */
+}
 
+.case2text {
+  text-align: center;
+  width: auto;
+  grid-area: c2;
+  margin: 0;
+}
+
+.case2text p {
+  margin: 0;
+}
+
+.showcase3 {
+  height: auto;
+  grid-area: c3;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.case3text {
+  text-align: center;
+  width: auto;
+  grid-area: c3;
+  margin: 0;
+}
+
+.case3text p {
+  margin: 0;
+}
 .portioliocontainer .case1 {
   width: 100%;
   box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
@@ -225,22 +279,21 @@ ul {
   grid-area: c1;
   height: 193.71px;
 }
-/* .case1text {
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-} */
 .portioliocontainer .case2 {
   grid-area: c2;
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  height: 193.71px;
 }
 .portioliocontainer .case3 {
   grid-area: c3;
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  height: 193.71px;
 }
 
 .portioliocontainer .p1 {
