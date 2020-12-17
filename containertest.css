@@ -1,5 +1,6 @@
 .container {
   height: 600px;
+  width: 1080px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   /* du glemte at skrive repeat første gang, derefter skal den stå direkte op til parentes */
