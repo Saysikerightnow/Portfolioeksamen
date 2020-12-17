@@ -151,7 +151,7 @@ ul {
   grid-template-areas: "t b";
 }
 .ommigcontainer p {
-  font-size: 12px;
+  font-size: 20px;
   grid-area: t;
   margin: 20px;
 }
@@ -191,14 +191,14 @@ ul {
   position: relative;
   overflow: hidden;
   align-content: center;
-  grid-template: repeat(2, 344px) / repeat(3, 1fr);
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   grid-template-areas:
     "h h ."
     "c1 c2 c3"
     "p1 p2 p3";
 }
 .portioliocontainer p {
-  font-size: 12px;
+  font-size: 20px;
   margin-left: 20px;
   margin-top: 0;
 }
@@ -304,13 +304,23 @@ ul {
   align-content: center;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   grid-template-areas:
-    "ko . ."
-    "i i2 i3";
+    "ko . "
+    "i i2";
 }
 
 .kontaktcontainer h2 {
   font-size: 36px;
   margin: 20px;
+}
+.kontaktcontainer .linkedin {
+  grid-area: i2;
+  text-align: center;
+  text-decoration: none;
+}
+.kontaktcontainer .email {
+  grid-area: i;
+  text-align: center;
+  text-decoration: none;
 }
 /*.kontaktcontainer p {
   font-size: 20px;
