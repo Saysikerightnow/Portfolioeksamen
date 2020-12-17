@@ -12,9 +12,9 @@
     <section>
       <div class="header">
         <ul>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Kompetencer</a></li>
-          <li><a href="#">Om Mig</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#skills">Kompetencer</a></li>
+          <li><a href="#about">Om Mig</a></li>
           <li><a href="#">Bredtved</a></li>
         </ul>
       </div>
@@ -34,6 +34,7 @@
             <img src="" alt="" />
           </div>-->
         </div>
+        <a id="about"></a>
         <div class="ommigcontainer">
           <div class="ommigtext">
             <h2>Om mig</h2>
@@ -52,64 +53,68 @@
             alt="profilbillede"
           />
         </div>
-        <div class="portioliocontainer">
-          <h2>Kompetencer - hvad kan jeg?</h2>
-
-          <div class="showcase1">
-            <div class="case1">
-              <img src="images/lightroom.png" alt="case 1 foto" />
+        <a id="skills">
+          <div class="portioliocontainer">
+            <h2>Kompetencer - hvad kan jeg?</h2>
+            <div class="showcase1">
+              <a target="_blank" class="case1" href="https://www.google.dk/">
+                <div class="case1">
+                  <img src="images/lightroom.png" alt="case 1 foto" />
+                </div>
+              </a>
+              <div class="case1text">
+                <h2>Fotografi</h2>
+              </div>
             </div>
-            <div class="case1text">
-              <h2>Fotografi</h2>
+            <div class="showcase2">
+              <a target="_blank" class="case2" href="https://www.bing.com/">
+                <div class="case2">
+                  <img src="images/premiere.png" alt="case 2 video" />
+                  <!-- https://youtu.be/MUDomttMqFg -->
+                </div>
+              </a>
+              <div class="case2text">
+                <h2>Videografi</h2>
+              </div>
             </div>
+            <div class="showcase3">
+              <a target="_blank" class="case3" href="https://duckduckgo.com/">
+                <div class="case3">
+                  <img src="images/atom.png" alt="case 3 udvikling" />
+                </div>
+              </a>
+              <div class="case3text">
+                <h2>Udvikling</h2>
+              </div>
+            </div>
+            <!--<p class="case2p">Video</p>-->
+            <!--<p class="case3p">Udvikling</p>-->
+            <p class="p1">
+              Hobby fotograf i fritiden med erfaring i lightroom CC
+            </p>
+            <p class="p2">
+              Erfaring i premiere Pro til almen videoredigering
+            </p>
+            <p class="p3">
+              Begynder erfaring som front end developer i HTML og CSS
+            </p>
           </div>
-          <div class="showcase2">
-            <div class="case2">
-              <img src="images/premiere.png" alt="case 2 video" />
-            </div>
-            <div class="case2text">
-              <h2>Videografi</h2>
-            </div>
+        </a>
+        <a id="contact">
+          <div class="kontaktcontainer">
+            <h2>Kontakt:</h2>
+            <!--<p>Email:</p>-->
+            <a href="mailto: marc@mbredtved.dk" class="email" target="_blank"
+              >marc@mbredtved.dk</a
+            >
+            <a
+              href="https://www.linkedin.com/in/marc-bredtved-047bbb1b5/"
+              class="linkedin"
+              target="_blank"
+              >Linkedin</a
+            >
           </div>
-          <div class="showcase3">
-            <div class="case3">
-              <img src="images/atom.png" alt="case 3 udvikling" />
-            </div>
-            <div class="case3text">
-              <h2>Udvikling</h2>
-            </div>
-          </div>
-          <!--<p class="case2p">Video</p>-->
-          <!--<p class="case3p">Udvikling</p>-->
-          <p class="p1">
-            Hobbyfotograf i fritiden, erfaring i lighroom CC
-          </p>
-          <p class="p2">
-            Erfaring i Premiere Pro
-          </p>
-          <p class="p3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            eget imperdiet justo. Nulla facilisi. Duis sed porta orci, fringilla
-            tempor urna. Curabitur erat mauris, eleifend eget mollis quis,
-            tempor eu mi. Fusce tortor lacus, facilisis ut turpis ac, pretium
-            accumsan nulla. Maecenas aliquet mauris id elit gravida, ac pharetra
-            arcu dignissim. Aliquam malesuada ornare sapien ac tempus.
-          </p>
-        </div>
-
-        <div class="kontaktcontainer">
-          <h2>Kontakt:</h2>
-          <!--<p>Email:</p>-->
-          <a href="mailto: marc@mbredtved.dk" class="email" target="_blank"
-            >marc@mbredtved.dk</a
-          >
-          <a
-            href="https://www.linkedin.com/in/marc-bredtved-047bbb1b5/"
-            class="linkedin"
-            target="_blank"
-            >Linkedin</a
-          >
-        </div>
+        </a>
       </div>
     </section>
   </body>

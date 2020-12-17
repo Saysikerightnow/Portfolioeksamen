@@ -12,21 +12,10 @@ html {
   padding-top: 0;
   width: 100%;
 }
-
-/* .nav {
-  overflow: hidden;
-  background-color: teal;
-  margin: 0;
-  box-shadow: 1px 1px grey;
-  padding: 20px 20px;
-  float: right;
+html {
+  scroll-behavior: smooth;
 }
-.nav div {
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-} */
+
 .header {
   overflow: hidden;
   background-color: black;
