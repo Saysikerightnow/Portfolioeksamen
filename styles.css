@@ -286,23 +286,28 @@ ul {
   grid-area: p3;
 }
 .kontaktcontainer {
-  grid-template-columns: 1fr 1fr;
   max-width: 1080px;
   padding: 20px;
   align-content: center;
   grid-template: repeat(1, 1fr) / repeat(2, 1fr);
-  grid-template-areas: "ko i";
+  grid-template-areas:
+    "h2 i"
+    "ko i";
 }
 
 .kontaktcontainer h2 {
   font-size: 36px;
   margin: 20px;
+  grid-area: h2;
 }
 .koninfo {
   display: grid;
   /*  grid-template: 1fr, 1fr / 1fr, 1fr; fejl i validator, komma er en forkert operator */
   grid-gap: 3px;
   text-decoration: none;
+}
+.kontaktcontainer .kontext {
+  grid-area: ko;
 }
 .kontaktcontainer > .koninfo {
   margin: 20px;
